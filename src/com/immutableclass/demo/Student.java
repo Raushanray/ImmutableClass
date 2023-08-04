@@ -30,7 +30,7 @@ final public class Student {
     }
 
     public Address getAddress() {
-        return address;
+        return new Address(address.getCity(), address.getState());
     }
 
     @Override

@@ -26,6 +26,20 @@ means here i will change the address of student.
         Student{id=1, studentName='Raushan', address= Address{city='bengaluru', state='karnatka'}}
          Student{id=1, studentName='Raushan', address= Address{city='Madhubani', state='Bihar'}}
         */
+        /*
+        this is break the immutable class properties.
+         */
+        /*
+        now  return new Address(address.getCity(), address.getState()); of the student class and
+        now no one can break immutable class properties and now my student class is 100% immutable class now no one
+        can alter my student class..
+         */
+
+         /*
+        now output:-
+        Student{id=1, studentName='Raushan', address= Address{city='bengaluru', state='karnatka'}}
+         Student{id=1, studentName='Raushan', address= Address{city='bengaluru', state='karnatka'}}
+        */
 
     }
 }
