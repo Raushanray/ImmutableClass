@@ -59,4 +59,10 @@ public class Address {
                 ", country='" + country + '\'' +
                 '}';
     }
+
+
+    //add the get instance method..
+    static Address getInstance(Address address) {
+        return new Address(address.getCity(), address.getState(), address.getCountry());
+    }
 }

@@ -29,8 +29,11 @@ final public class Student {
         return studentName;
     }
 
-    public Address getAddress() {
+    /*public Address getAddress() {
         return new Address(address);
+    }*/
+    public Address getAddress() {
+        return Address.getInstance(address);
     }
 
     @Override
