@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         Address hoemAddress = new Address("bengaluru", "karnatka");
+        System.out.println("Address of object :" + hoemAddress.hashCode());
         Student student = new Student(1, "Raushan", hoemAddress);
 
         System.out.println(student);
@@ -17,6 +18,7 @@ here my address class is mutable and my student class is immutable.
 means here i will change the address of student.
  */
         Address address = student.getAddress();
+        System.out.println("Address object : " + address.hashCode());
         address.setCity("Madhubani");
         address.setState("Bihar");
         System.out.println(student);
