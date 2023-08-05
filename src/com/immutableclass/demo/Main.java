@@ -4,6 +4,21 @@ package com.immutableclass.demo;
 i am creating Student class object and then initializes fields and print it..
 here can change student data because my fields are final and here setter method is not implement of this fields..
  */
+/*
+Advantage:-
+1. Thread safty is the immutable objects are  Thread safe  :-imaImagine the normal mutable objects now if there is a mutable
+object in a multi-threaded environment then different threads can access that particular object in a same time,
+imagine one thread is reading the data from an object and one thread is writing the data to the object so,
+ maybe there is a chance of data inconsistency because if someone is writing something while the other thread
+  is  reading maybe the data inside the object will be changed but is the object is immutable then obviously
+   we can guarantee that once the object is constructed obviously the data inside the object will not be changed
+    that's the advantage right so even though 10 threads are accessing the same immutable object we can be assured
+     that no that thread can not hamper the data that we got inside that object because that object is immutable
+      so once the object is getting created these threads can not change the data inside that particular object..
+
+ 2. immutable key is used in HashMap..
+ */
+
 
 public class Main {
     public static void main(String[] args) {
