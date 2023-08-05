@@ -19,6 +19,13 @@ public class Address {
 
     }
 
+    /*
+    the solution of above proble i'm creating a new constructor of address class..
+     */
+    public Address(Address address) {
+        this(address.getCity(), address.getState(), address.country);
+    }
+
     public String getCity() {
         return city;
     }
